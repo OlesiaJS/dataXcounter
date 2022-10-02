@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table JS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="container">
+            <div class="card">
+                <div class="timer">
+                    <div class="timer__elements">
+                        <div class="timer__element timer__days">00</div>
+                        <div class="timer__element timer__hours">00</div>
+                        <div class="timer__element timer__minutes">00</div>
+                        <div class="timer__element timer__seconds">00</div>
+                    </div>
+                        <svg style="display: none" viewBox="0 0 960 300">
+                            <symbol id="s-text">
+                                <text text-anchor="middle" x="50%" y="80%">Тime is up</text>
+                            </symbol>
+                            <g class="g-ants">
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                                <use xlink:href="#s-text" class="text-copy"></use>
+                            </g>
+                        </svg>
+                </div>
+                <p class="error" style="display: none"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
